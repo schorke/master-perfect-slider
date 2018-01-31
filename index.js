@@ -16,6 +16,11 @@ module.exports = {
     var parentApp = (typeof app.import !== 'function' && app.app) ? app.app : app;
     var options = extend(defaultOptions, app.options['ui-slider']);
 
+    parentApp.import('node_modules/seiyria-bootstrap-slider/dist/bootstrap-slider.js');
+
+    if (options.importBootstrapSliderCSS) {
+      parentApp.import('node_modules/seiyria-bootstrap-slider/dist/css/bootstrap-slider.css');
+    }
     if (options.importAddonCss) {
       parentApp.import('vendor/ui-slider/ui-slider.css');
     }
