@@ -73,6 +73,7 @@
     "ember-addon"
   ],
   "dependencies": {
+    "bootstrap-slider": "^10.0.0",
     "ember-cli-babel": "^5.2.4",
     "ember-cli-htmlbars": "^1.1.1",
     "ember-runtime-enumerable-includes-polyfill": "^1.0.4"
